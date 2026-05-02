@@ -1,0 +1,11 @@
+# Core Frameworks
+streamlit
+
+# Computer Vision & OCR
+easyocr
+opencv-python
+numpy
+
+# Deep Learning Backend
+torch
+torchvision
