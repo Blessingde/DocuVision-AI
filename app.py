@@ -71,11 +71,11 @@ if uploaded_file:
 
         st.subheader("Extracted Information")
         st.json(data)
-        st.write(f"** FirstName:** {data['FN']}")
-        st.write(f"** LirstName:** {data['LN']}")
-        st.write(f"** License:** {data['DL']}")
-        st.write(f"** DOB:** {data['DOB']}")
-        st.write(f"** Expiry:** {data['Exp']}")
+        st.write(f"**FirstName:** {data['FN']}")
+        st.write(f"**LastName:** {data['LN']}")
+        st.write(f"**License:** {data['DL']}")
+        st.write(f"**DOB:** {data['DOB']}")
+        st.write(f"**Expiry:** {data['Exp']}")
         st.write(f"**Address:** {data['Add']}")
 
     if show_raw:
