@@ -44,9 +44,9 @@ if uploaded_file:
     with col1:
         file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
         image = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
-        gray = preprocess_image(image)
+        gray_img = preprocess_image(image)
         st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), use_container_width=True, caption="Original Image")
-        st.image(thresh, use_container_width=True, caption="Gray (OCR View)")
+        st.image(gray_img, use_container_width=True, caption="Gray (OCR View)")
 
 
     with col2:
