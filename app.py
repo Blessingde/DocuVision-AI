@@ -52,7 +52,7 @@ if uploaded_file:
     with col2:
         with st.spinner("🔍 Processing image..."):
             reader = easyocr.Reader(['en'], gpu=False)
-            results = reader.readtext(thresh)
+            results = reader.readtext(gray_img)
 
             texts = [res[1] for res in results]
             confidences = [conf[2] for conf in results]
